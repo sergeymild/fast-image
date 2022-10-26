@@ -12,6 +12,8 @@ import { ResizeModeExample } from './ResizeModeExample'
 import { TintColorExample } from './TintColorExample'
 import { LocalImagesExample } from './LocalImagesExample'
 import { AutoSizeExample } from './AutoSizeExample'
+import { SvgExample } from './SvgExample'
+import { VideoThumbnailExample } from './VideoThumbnailExample'
 
 const FastImageExample = () => (
     <View style={styles.container}>
@@ -30,6 +32,8 @@ const FastImageExample = () => (
                     <FeatureText text="Tap images to reload examples." />
                 </Section>
                 <PriorityExample />
+                <VideoThumbnailExample />
+                <SvgExample />
                 <GifExample />
                 <BorderRadiusExample />
                 <ProgressExample />
