@@ -14,6 +14,7 @@ import { LocalImagesExample } from './LocalImagesExample'
 import { AutoSizeExample } from './AutoSizeExample'
 import { SvgExample } from './SvgExample'
 import { VideoThumbnailExample } from './VideoThumbnailExample'
+import { DefaultExample } from './DefaultExample'
 
 const FastImageExample = () => (
     <View style={styles.container}>
@@ -33,6 +34,7 @@ const FastImageExample = () => (
                 </Section>
                 <PriorityExample />
                 <VideoThumbnailExample />
+                <DefaultExample />
                 <SvgExample />
                 <GifExample />
                 <BorderRadiusExample />
