@@ -3,10 +3,22 @@
 
 #import <SDWebImage/SDImageCache.h>
 #import <SDWebImage/SDWebImagePrefetcher.h>
+#import <SDWebImageSVGNativeCoder/SDImageSVGNativeCoder.h>
+#import <SDWebImageVideoCoder/SDWebImageVideoCoder.h>
 
 @implementation FFFastImageViewManager
 
 RCT_EXPORT_MODULE(FastImageView)
+
+- (id) init
+{
+    self = [super init];
+    
+    [SDImageCodersManager.sharedManager addCoder:SDImageSVGNativeCoder.sharedCoder];
+    [SDImageCodersManager.sharedManager addCoder:SDImageVideoCoder.sharedCoder];
+    
+    return self;
+}
 
 - (FFFastImageView*)view {
   return [[FFFastImageView alloc] init];

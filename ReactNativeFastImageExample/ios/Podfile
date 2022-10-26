@@ -17,6 +17,8 @@ target 'ReactNativeFastImageExample' do
     # Pods for testing
   end
 
+#   pod 'SVGKit', git: 'https://github.com/sergeymild/SVGKit'
+
   # Enables Flipper.
   #
   # Note that if you have use_frameworks! enabled, Flipper will not work and
